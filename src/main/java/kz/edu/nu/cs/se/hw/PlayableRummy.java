@@ -1,5 +1,7 @@
 package kz.edu.nu.cs.se.hw;
 
+import java.util.ArrayList;
+
 /**
  * An interface for the game logic of a variation of the popular card game
  * "rummy". Together with the unit tests <code>TestRummyCode</code>, an
@@ -254,4 +256,8 @@ public interface PlayableRummy {
      * @throws RummyException
      */
     public void discard(String card);
+
+    ArrayList<String> getDiscard();
+
+    ArrayList<String> getDeck();
 }
